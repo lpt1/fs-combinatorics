@@ -21,3 +21,12 @@ let repeat (arg: 'a list) (repeat: int) =
     | h :: t -> loop t [for x in h do for y in acc do yield y @ [x]]
 
   loop pools [[]]
+
+
+
+let mapcons x = List.map (fun xs -> x :: xs)
+
+/// Calculate the integer compositions of argument n
+let rec intCompositions = function
+    | 1 -> [[1]]
+    | n -> [n] :: [ for x in 1..(n - 1) do yield! (mapcons (n - x)) (intCompositions x) ]
