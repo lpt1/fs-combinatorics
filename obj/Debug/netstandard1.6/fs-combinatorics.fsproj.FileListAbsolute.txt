@@ -1,0 +1,5 @@
+/Users/lee/code/fs/fs-combinatorics/bin/Debug/netstandard1.6/fs-combinatorics.deps.json
+/Users/lee/code/fs/fs-combinatorics/bin/Debug/netstandard1.6/fs-combinatorics.dll
+/Users/lee/code/fs/fs-combinatorics/bin/Debug/netstandard1.6/fs-combinatorics.pdb
+/Users/lee/code/fs/fs-combinatorics/obj/Debug/netstandard1.6/fs-combinatorics.dll
+/Users/lee/code/fs/fs-combinatorics/obj/Debug/netstandard1.6/fs-combinatorics.pdb
