@@ -1,15 +1,12 @@
 namespace FSCombinatorics
 
-module Cartesian =
+module Permutations =
 
   ///Python's itertools.product() in F#
-  ///repeat [0,1] 2
-  ///>>> [x+[y] for x in [[]] for y in (0,1)]
-  ///[[0], [1]]
-  ///>>> [x+[y] for x in [[0], [1]] for y in (0,1)]
-  ///[[0, 0], [0, 1], [1, 0], [1, 1]]
-  let product (arg: 'a list) (times: int) =
-    let pools = [ for n in 1..times -> arg ] // pools=[[0,1]; [0,1]]
+  ///permute ['A'; 'B'] 2
+  ///> [['A'; 'A']; ['B'; 'A']; ['A'; 'B']; ['B'; 'B']]
+  let permute (arg: 'a list) (times: int) =
+    let pools = [ for n in 1..times -> arg ]
     
     let rec loop lls acc = 
       match lls with
